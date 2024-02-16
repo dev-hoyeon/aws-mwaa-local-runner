@@ -1,4 +1,12 @@
---constraint "https://raw.githubusercontent.com/apache/airflow/constraints-2.6.3/constraints-3.10.txt"
-
-apache-airflow-providers-snowflake==4.2.0
-apache-airflow-providers-mysql==5.1.1
+apache-airflow-providers-databricks==2.0.2
+apache-airflow-providers-elasticsearch==4.1.0
+apache-airflow-providers-cncf-kubernetes==3.0.0
+apache-airflow-providers-slack
+bagpy==0.4.10
+databricks-sql-connector==2.0.2
+geopy==2.3.0
+kafka-python==2.0.1
+kubernetes==11.0.0
+elasticsearch<7.11
+plotly==5.18.0
+datapane
