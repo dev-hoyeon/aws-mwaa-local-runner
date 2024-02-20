@@ -49,6 +49,11 @@ RUN chmod +x /entrypoint.sh
 EXPOSE 8080 5555 8793
 
 USER airflow
+
+# requirements/requirements.txt COPY & INSTALL
+COPY requirements/requirements.txt ${AIRFLOW_USER_HOME}/requirements/requirements.txt
+RUN pip3 install -r "${AIRFLOW_USER_HOME}/requirements/requirements.txt"
+
 WORKDIR ${AIRFLOW_USER_HOME}
 ENTRYPOINT ["/entrypoint.sh"]
 CMD ["local-runner"]
